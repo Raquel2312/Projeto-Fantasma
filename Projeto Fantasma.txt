@@ -1,0 +1,25 @@
+// DECLARAR VARIÁVEIS
+let nomeDoHeroi = "Meivis";
+let idadeDoHeroi = 21;
+let forcaDoHeroi = 100;
+let habilidadeDoHeroi = "Falar Com Os Animais";
+let fraquezaDoHeroi = "Chocolate";
+
+// USANDO OPERADORES PARA CALCULAR NÍVEL
+// Aqui criamos uma fórmula simples de "nível":
+let nivelDoHeroi = (forcaDoHeroi / 10) + (idadeDoHeroi / 2);
+
+// Exibindo o resultado com concatenação e operadores de comparação
+console.log("Nome: " + nomeDoHeroi);
+console.log("Nível calculado: " + nivelDoHeroi);
+
+// Usando operadores de comparação e lógicos para classificar o herói
+if (nivelDoHeroi >= 20 && nivelDoHeroi < 40) {
+  console.log(nomeDoHeroi + " é um herói 🟢 Iniciante");
+} else if (nivelDoHeroi >= 40 && nivelDoHeroi < 70) {
+  console.log(nomeDoHeroi + " é um herói 🟡 Intermediário");
+} else if (nivelDoHeroi >= 70) {
+  console.log(nomeDoHeroi + " é um herói 🔴 Lendário!");
+} else {
+  console.log(nomeDoHeroi + " ainda é um aprendiz 👶");
+}
